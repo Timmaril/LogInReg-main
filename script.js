@@ -1,17 +1,8 @@
 const container = document.querySelector('.container'),
       pwShowHide = document.querySelectorAll('.showHidepw'),
-      pwFields =document.querySelectorAll('.password'),
+      pwFields = document.querySelectorAll('.password'),
       signUp = document.querySelector('.signup-link'),
       logIn = document.querySelector('.login-link')
-
-
-//supabase
-
-import { createClient } from '@supabase/supabase-js'
-
-const supabaseUrl = 'https://yarffszubzoclmufuzzz.supabase.co';
-const supabaseKey = process.env.SUPABASE_KEY;
-const supabase = createClient(supabaseUrl, supabaseKey);
 
       //event listener to show/hide password
       pwShowHide.forEach((eyeIcon,index) =>{
